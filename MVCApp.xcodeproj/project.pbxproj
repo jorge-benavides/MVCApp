@@ -19,6 +19,7 @@
 		D1648E09290BF0A00051CDA2 /* AddPokemonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1648E08290BF0A00051CDA2 /* AddPokemonController.swift */; };
 		D1648E0B290BF0C80051CDA2 /* RemovePokemonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1648E0A290BF0C80051CDA2 /* RemovePokemonController.swift */; };
 		D1648E0D290BF10C0051CDA2 /* PokemonAggregator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1648E0C290BF10C0051CDA2 /* PokemonAggregator.swift */; };
+		D1648E10290BF5080051CDA2 /* PokemonsViewControllerComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1648E0F290BF5080051CDA2 /* PokemonsViewControllerComposer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		D1648E08290BF0A00051CDA2 /* AddPokemonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPokemonController.swift; sourceTree = "<group>"; };
 		D1648E0A290BF0C80051CDA2 /* RemovePokemonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemovePokemonController.swift; sourceTree = "<group>"; };
 		D1648E0C290BF10C0051CDA2 /* PokemonAggregator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAggregator.swift; sourceTree = "<group>"; };
+		D1648E0F290BF5080051CDA2 /* PokemonsViewControllerComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsViewControllerComposer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		C31F67CE290B98EA00772B48 /* MVC */ = {
 			isa = PBXGroup;
 			children = (
+				D1648E0E290BF4F60051CDA2 /* Composers */,
 				D1648E07290BF0960051CDA2 /* Helpers */,
 				C31F67BE290B969900772B48 /* PokemonsViewController.swift */,
 				D1648E03290BF0520051CDA2 /* PokemonCellController.swift */,
@@ -99,6 +102,14 @@
 				D1648E0C290BF10C0051CDA2 /* PokemonAggregator.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D1648E0E290BF4F60051CDA2 /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				D1648E0F290BF5080051CDA2 /* PokemonsViewControllerComposer.swift */,
+			);
+			path = Composers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +189,7 @@
 				D1648E0B290BF0C80051CDA2 /* RemovePokemonController.swift in Sources */,
 				D1648E09290BF0A00051CDA2 /* AddPokemonController.swift in Sources */,
 				C31F67BB290B969900772B48 /* AppDelegate.swift in Sources */,
+				D1648E10290BF5080051CDA2 /* PokemonsViewControllerComposer.swift in Sources */,
 				C31F67BD290B969900772B48 /* SceneDelegate.swift in Sources */,
 				D1648E0D290BF10C0051CDA2 /* PokemonAggregator.swift in Sources */,
 				D1648E04290BF0520051CDA2 /* PokemonCellController.swift in Sources */,

@@ -20,9 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         let pokemonsViewModel = PokemonsViewModel()
         let pokemonAggregator = PokemonAggregator()
-        let addPokemonController = AddPokemonController(pokemonAggregator: pokemonAggregator, pokemonsViewModel: pokemonsViewModel)
-        let removePokemonController = RemovePokemonController(pokemonsViewModel: pokemonsViewModel)
-        let pokemonsViewController = PokemonsViewController(viewModel: pokemonsViewModel, addPokemonController: addPokemonController, removePokemonController: removePokemonController)
+        let pokemonsViewController = PokemonsViewControllerComposer.viewControllerComposed(with: pokemonsViewModel,
+                                                                                           pokemonAggregator: pokemonAggregator)
         window?.rootViewController = pokemonsViewController
         window?.makeKeyAndVisible()
     }

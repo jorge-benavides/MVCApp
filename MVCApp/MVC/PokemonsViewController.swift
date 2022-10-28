@@ -57,11 +57,6 @@ final class PokemonsViewController: UIViewController {
         removePokemonController.pokemonToRemove(index)
     }
 
-    private func scrollToBottom() {
-        guard let lastIndexPath = viewModel.getLastIndexPath() else { return }
-        tableView.scrollToRow(at: lastIndexPath, at: .bottom, animated: true)
-    }
-
     private func tableViewDidSelectAdd() {
         tableView.reloadData()
         removePokemonController.pokemonToRemove(nil)
@@ -70,6 +65,11 @@ final class PokemonsViewController: UIViewController {
 
     private func tableViewDidSelectRemove() {
         tableView.reloadData()
+    }
+    
+    private func scrollToBottom() {
+        guard let lastIndexPath = viewModel.getLastIndexPath() else { return }
+        tableView.scrollToRow(at: lastIndexPath, at: .bottom, animated: true)
     }
 }
 
